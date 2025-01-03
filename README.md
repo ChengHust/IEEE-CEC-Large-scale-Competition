@@ -1,6 +1,6 @@
 Large-scale Multiobjective Optimization for Status Assessment of Measuring Equipment
 
-**Please download the PlatEMO platform (PlatEMO_Competition_2025.zip) for the competition!**
+**Please download the PlatEMO platform (PlatEMO(SAM2025).zip) for the competition!**
 
 ## Overview & Aim:
 
