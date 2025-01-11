@@ -43,19 +43,19 @@ With the same computational budget, the best solution for each problem obtained 
 The PlatEMO v4.4 will be used as the competition platform for fair comparisons, with population size (N=100), number of independent runs (run=20), and number of results (20). The code of an example is given as
 
 ```
-platemo('problem',@SAM1,'algorithm',@NSGAII,'N',100,'maxFE',1e7,'save',1)
+platemo('problem',@SAM1,'algorithm',@NSGAII,'N',100,'maxFE',1e6,'save',1)
 ```
 
 * The test problems are
 
 | Problem | Number of Objectives | Number of Decision Variables | Maximum Number of Function Evaluations |
 | :-----: | :------------------: | :--------------------------: | :------------------------------------: |
-|  SAM1  |         M=3         |          D = 10,000          |                FE = 100,000,000          |
-|  SAM2  |         M=3         |         D = 50,000         |                FE = 100,000,000            |
-|  SAM3  |         M=3         |         D = 100,000         |                FE = 100,000,000           |
-|  SAM4  |         M=2         |          D = 10,000          |                FE = 100,000,000          |
-|  SAM5  |         M=2         |         D = 50,000         |                FE = 100,000,000            |
-|  SAM6  |         M=2         |         D = 100,000         |                FE = 100,000,000           |
+|  SAM1  |         M=3         |          D = 10,000          |                FE = 1,000,000          |
+|  SAM2  |         M=3         |         D = 50,000         |                FE = 1,000,000            |
+|  SAM3  |         M=3         |         D = 100,000         |                FE = 1,000,000           |
+|  SAM4  |         M=2         |          D = 10,000          |                FE = 1,000,000          |
+|  SAM5  |         M=2         |         D = 50,000         |                FE = 1,000,000            |
+|  SAM6  |         M=2         |         D = 100,000         |                FE = 1,000,000           |
 
 ## Important Dates:
 
