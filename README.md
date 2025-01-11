@@ -50,12 +50,12 @@ platemo('problem',@SAM1,'algorithm',@NSGAII,'N',100,'maxFE',1e7,'save',1)
 
 | Problem | Number of Objectives | Number of Decision Variables | Maximum Number of Function Evaluations |
 | :-----: | :------------------: | :--------------------------: | :------------------------------------: |
-|  SAM1  |         M=3         |          D = 10,000          |                FE = 1E7                |
-|  SAM2  |         M=3         |         D = 50,000         |                FE = 5E7                |
-|  SAM3  |         M=3         |         D = 100,000         |                FE = 1E8                |
-|  SAM4  |         M=2         |          D = 10,000          |                FE = 1E7                |
-|  SAM5  |         M=2         |         D = 50,000         |                FE = 5E7                |
-|  SAM6  |         M=2         |         D = 100,000         |                FE = 1E8                |
+|  SAM1  |         M=3         |          D = 10,000          |                FE = 100,000,000          |
+|  SAM2  |         M=3         |         D = 50,000         |                FE = 100,000,000            |
+|  SAM3  |         M=3         |         D = 100,000         |                FE = 100,000,000           |
+|  SAM4  |         M=2         |          D = 10,000          |                FE = 100,000,000          |
+|  SAM5  |         M=2         |         D = 50,000         |                FE = 100,000,000            |
+|  SAM6  |         M=2         |         D = 100,000         |                FE = 100,000,000           |
 
 ## Important Dates:
 
