@@ -9,10 +9,10 @@ Large-scale Multiobjective Optimization for Status Assessment of Measuring Equip
 Evolutionary algorithms (EAs) have been a popular optimization tool for decades, showing promising performance in solving various benchmark optimization problems.
 Nevertheless, using EAs on multiobjective optimization with over 100 decision variables (large-scale multiobjective optimization problems, LSMOPs) remains challenging due to the "curse of dimensionality".
 This phenomenon is more significant for LSMOPs in complex man-made systems, e.g., railway systems, social networks, and power systems.
-Specifically, EAs suffer from difficulties in dealing with enormous search space, irregularity in variable interactions and objective functions, and the existence of massive local optima for LSMOPs in emerging and critical applications.
+Specifically, EAs have difficulties dealing with enormous search space, irregularity in variable interactions and objective functions, and the existence of massive local optima for LSMOPs in emerging and critical applications.
 Existing optimization algorithms may cost unbearable function evaluations (FEs) and computation time (time complexity) to obtain acceptably converged/diverse results.
-Unfortunately, this phenomenon is more serious when the number of decision variables increases to large scale (>100), where the limitation in storage memory rises due to the increased space complexity.
-Both time and memory efficiency and search effectiveness should be considered when dealing with large-scale multiobjective optimization problems (LSMOPs)  to fill the gap between complex real-world optimization and advanced optimization algorithms.
+Unfortunately, this phenomenon is more serious when the number of decision variables increases to a large scale (>100), where the limitation in storage memory rises due to the increased space complexity.
+To fill the gap between complex real-world optimization and advanced optimization algorithms, both time and memory efficiency and search effectiveness should be considered when dealing with large-scale multiobjective optimization problems (LSMOPs).
 
 <img src="https://github.com/ChengHust/IEEE-CEC-2024-Competition/blob/main/CEC0_IEEE_30_nodes.png" />
 Fig. 1 The IEEE 30-node standard topology for SAM problems.
