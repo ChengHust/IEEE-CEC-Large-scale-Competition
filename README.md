@@ -88,7 +88,7 @@ generated under the official settings.  The submitted algorithm should be
 runnable through the PlatEMO interface, for example:
 
 ```matlab
-platemo('problem',@EvoPINN1,'algorithm',@YourAlgorithm,'N',50,'maxFE',100000,'parameter',{1,1},'save',1)
+platemo('problem',@EvoPINN1,'algorithm',@YourAlgorithm,'N',50,'maxFE',1e5,'save',20)
 ```
 
 ## Important Dates:
