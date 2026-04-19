@@ -24,7 +24,7 @@ Small parameter changes may strongly affect one physical constraint while barely
 changing another.  Therefore, this benchmark is intended to encourage new search
 mechanisms that can produce real loss reduction, not only a diverse population.
 
-<img src="https://github.com/ChengHust/IEEE-CEC-Large-scale-Competition/blob/main/landscape.png" />
+<img src="landscape.png" />
 Fig. 1 landscapes of `EvoPINN11`.  The three surfaces correspond to the `pde`,
 `clamped_bc`, and `free_bc` objectives.
 
