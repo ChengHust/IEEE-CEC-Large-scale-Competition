@@ -95,17 +95,26 @@ platemo('problem',@EvoPINN1,'algorithm',@YourAlgorithm,'N',50,'maxFE',1e5,'save'
 
 Competition dates will be announced by the organizers.
 
-- Registration deadline: TBA
-- Results submission deadline: TBA
-- Notification: TBA
+xxxxx
 
 ## Awards
 
-Awards will be announced by the organizers.
+xxxx
 
 ## Competition Organizers:
 
-Organizer information will be added before the official release.
+* ***Cheng He***
+  School of Electrical and Electronic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China.
+  chenghe_seee@hust.edu.cn
+* ***Ye Tian***
+  Institutes of Physical Science and Information Technology, Anhui University, Hefei 230601, China
+  field910921@gmail.com
+* ***Handing Wang***
+  School of Artificial Intelligence, Xidian University, Xi'an 710071, China.
+  hdwang@xidian.edu.cn
+* ***Hongbin Li***
+  School of Electrical and Electronic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China.
+  lihongbin@hust.edu.cn
 
 ## Citation
 
