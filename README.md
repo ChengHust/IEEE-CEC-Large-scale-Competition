@@ -5,33 +5,19 @@
 ## Overview & Aim:
 
 ---
+Physics-informed neural networks (PINNs) have become a powerful paradigm for solving differential equations by embedding physical laws into neural-network training. In a typical PINN, the model is optimized by minimizing several physical loss terms, such as the PDE residual, boundary-condition loss, initial-condition loss, and other constraint-related objectives. However, most existing PINN methods are built upon gradient-based optimization.
 
-Physics-informed neural networks (PINNs) use neural networks to approximate the
-solutions of differential equations.  Instead of relying only on labelled data,
-a PINN is trained by minimizing physical losses, such as the PDE residual,
-boundary-condition loss, initial-condition loss, data mismatch, or constitutive
-residual.  Most existing PINN methods depend on gradient-based optimizers.
-
-EvoPINN studies a different question: can black-box multiobjective optimizers
-train PINNs directly in the neural-network parameter space?  In each EvoPINN
-problem, the decision variables are the flattened network weights, and the
-objectives are the raw PINN loss components.  The optimizer only receives
-objective values from the evaluator.
-
-This setting is difficult because PINN training spaces are high-dimensional,
-expensive, sensitive to perturbations, and often have conflicting loss terms.
-Small parameter changes may strongly affect one physical constraint while barely
-changing another.  Therefore, this benchmark is intended to encourage new search
-mechanisms that can produce real loss reduction, not only a diverse population.
+The EvoPINN competition explores an alternative route: training PINNs as black-box multiobjective optimization problems in the parameter space of neural networks. In each EvoPINN task, the decision variables are the flattened network weights and biases, while the objectives are the raw PINN loss components. Participants are not allowed to use analytical gradients, automatic differentiation, or any modification of the provided evaluator. The optimizer must improve the PINN purely through black-box objective queries.
 
 <img src="landscape.png" />
 Fig. 1 landscapes of `EvoPINN11`.  The three surfaces correspond to the `pde`,
 `clamped_bc`, and `free_bc` objectives.
 
-In this competition, twelve EvoPINN problems are provided.  They cover classical
-PINN equations and data-driven PINN settings, with 2 or 3 objectives and up to
-45,901 decision variables.  Participants are encouraged to develop a general
-optimizer for all problems rather than a solver for one specific equation.
+This problem setting is highly challenging. PINN training landscapes are high-dimensional, computationally expensive, sensitive to parameter perturbations, and often exhibit strong conflicts among physical objectives. A search step that reduces one loss term may have little effect on another, or may even deteriorate it. Therefore, success in EvoPINN requires algorithms that can simultaneously promote convergence and preserve diversity, instead of relying on population spread alone.
+
+The aim of this competition is to stimulate the development of new black-box optimization mechanisms for PINN training, especially for large-scale and expensive multiobjective settings. Since the final ranking is based on hypervolume (HV), competitive algorithms should produce Pareto fronts with both strong loss reduction and good distribution quality under the same evaluation budget.
+
+Twelve EvoPINN benchmark problems are provided on the PlatEMO platform. These problems cover representative PINN tasks with 2 or 3 objectives and up to 45,901 decision variables. Participants are encouraged to develop a robust and general optimizer for the entire benchmark suite, rather than a method specialized for a single problem.
 
 ## Platform & Parameter settings
 
@@ -66,17 +52,6 @@ Participants should treat the evaluator as a black box.  Analytical gradients, a
 | `EvoPINN10` | Kovasznay flow 2D | 3 | 7,953 | `momentum`, `continuity`, `boundary_data` |
 | `EvoPINN11` | Euler-Bernoulli beam 1D | 3 | 901 | `pde`, `clamped_bc`, `free_bc` |
 | `EvoPINN12` | Linear elasticity 2D | 2 | 5,245 | `equilibrium`, `constitutive` |
-
-## Submission
-
-Participants should submit the source code of the optimizer, a short method
-description, running instructions, required dependencies, and the result files
-generated under the official settings.  The submitted algorithm should be
-runnable through the PlatEMO interface, for example:
-
-```matlab
-platemo('problem',@EvoPINN1,'algorithm',@YourAlgorithm,'N',50,'maxFE',1e5,'save',20)
-```
 
 ## Important Dates:
 
