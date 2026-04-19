@@ -1,4 +1,4 @@
-# EvoPINN: Multiobjective Neuroevolution for PINN Training
+# EvoPINN: Large-scale Multiobjective Optimization for PINN Training
 
 **Please use the PlatEMO platform for this competition.**
 
@@ -24,12 +24,11 @@ Small parameter changes may strongly affect one physical constraint while barely
 changing another.  Therefore, this benchmark is intended to encourage new search
 mechanisms that can produce real loss reduction, not only a diverse population.
 
-<img src="docs/figures/evopinn11_objective_landscape_panel.png" />
+<img src="landscape.png" />
 
 Fig. 1 Objective-wise local loss landscapes of `EvoPINN11` on one shared
 two-dimensional parameter slice.  The three surfaces correspond to the `pde`,
-`clamped_bc`, and `free_bc` objectives, showing that different PINN loss terms
-can have very different local geometry.
+`clamped_bc`, and `free_bc` objectives.
 
 In this competition, twelve EvoPINN problems are provided.  They cover classical
 PINN equations and data-driven PINN settings, with 2 or 3 objectives and up to
