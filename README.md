@@ -24,7 +24,7 @@ Small parameter changes may strongly affect one physical constraint while barely
 changing another.  Therefore, this benchmark is intended to encourage new search
 mechanisms that can produce real loss reduction, not only a diverse population.
 
-<img src="https://github.com/ChengHust/IEEE-DOCS-2026-Competition/blob/main/landscape.png" />
+<img src="https://github.com/ChengHust/IEEE-CEC-2024-Competition/blob/main/landscape.png" />
 Fig. 1 Objective-wise local loss landscapes of `EvoPINN11` on one shared
 two-dimensional parameter slice.  The three surfaces correspond to the `pde`,
 `clamped_bc`, and `free_bc` objectives.
