@@ -1,6 +1,6 @@
 # EvoPINN: Large-scale Multiobjective Optimization for PINN Training
 
-**Please use the PlatEMO platform for this competition.**
+**Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for the competition!**
 
 ## Overview & Aim:
 
