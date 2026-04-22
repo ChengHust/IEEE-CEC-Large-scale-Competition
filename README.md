@@ -15,7 +15,7 @@ Fig. 1 landscapes of `EvoPINN11`.  The three surfaces correspond to the `pde`,
 
 This problem setting is highly challenging. PINN training landscapes are high-dimensional, computationally expensive, sensitive to parameter perturbations, and often exhibit strong conflicts among physical objectives. A search step that reduces one loss term may have little effect on another, or may even deteriorate it. Therefore, success in EvoPINN requires algorithms that can simultaneously promote convergence and preserve diversity, instead of relying on population spread alone.
 
-The aim of this competition is to stimulate the development of new black-box optimization mechanisms for PINN training, especially for large-scale and expensive multiobjective settings. Since the final ranking is based on hypervolume (HV), competitive algorithms should produce Pareto fronts with both strong loss reduction and good distribution quality under the same evaluation budget.
+The aim of this competition is to stimulate the development of new black-box optimization mechanisms for PINN training, especially for large-scale and expensive multiobjective settings. And the final ranking is based on hypervolume (HV).
 
 Twelve EvoPINN benchmark problems are provided on the PlatEMO platform. These problems cover representative PINN tasks with 2 or 3 objectives and up to 45,901 decision variables. Participants are encouraged to develop a robust and general optimizer for the entire benchmark suite, rather than a method specialized for a single problem.
 
