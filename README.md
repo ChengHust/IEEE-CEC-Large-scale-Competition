@@ -71,9 +71,6 @@ xxxx
 * ***Ye Tian***
   Institutes of Physical Science and Information Technology, Anhui University, Hefei 230601, China
   field910921@gmail.com
-* ***Handing Wang***
-  School of Artificial Intelligence, Xidian University, Xi'an 710071, China.
-  hdwang@xidian.edu.cn
 * ***Hongbin Li***
   School of Electrical and Electronic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China.
   lihongbin@hust.edu.cn
