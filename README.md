@@ -1,37 +1,36 @@
 # EvoPINN: Large-scale Multiobjective Optimization for PINN Training
 
-**Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for the competition!**
+**Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for this competition!**
 
 ## Overview & Aim:
 
 ---
-Physics-informed neural networks (PINNs) have become a powerful paradigm for solving differential equations by embedding physical laws into neural-network training. In a typical PINN, the model is optimized by minimizing several physical loss terms, such as the PDE residual, boundary-condition loss, initial-condition loss, and other constraint-related objectives. However, most existing PINN methods are built upon gradient-based optimization.
+Physics-informed neural networks (PINNs) have become a powerful paradigm for solving partial differential equations (PDEs) by embedding physical laws into neural-network training. In a typical PINN, the model is optimized by minimizing several physical loss terms, such as the PDE residual, boundary-condition loss, initial-condition loss, and other constraint-related objectives. Recently, most existing PINN methods are built upon gradient-based optimization. Consequently, all the loss terms are optimized via predefined/adaptive weight aggregations, which may fail to find the optima due to the multiobjective conflicting nature of the PINN training task.
 
-The EvoPINN competition explores an alternative route: training PINNs as black-box multiobjective optimization problems in the parameter space of neural networks. In each EvoPINN task, the decision variables are the flattened network weights and biases, while the objectives are the raw PINN loss components. Participants are not allowed to use analytical gradients, automatic differentiation, or any modification of the provided evaluator. The optimizer must improve the PINN purely through black-box objective queries.
+Thus, the EvoPINN competition tries to explore an alternative route: training PINNs as black-box multiobjective optimization problems in the parameter space of neural networks. In each EvoPINN task, the decision variables are the flattened network weights and biases, while the objectives are the raw PINN loss components. Participants are not allowed to use analytical gradients, automatic differentiation, or any modification of the provided evaluator. The optimizer must improve the PINN purely through black-box objective queries.
 
 <img src="landscape.png" />
 Fig. 1 landscapes of `EvoPINN11`.  The three surfaces correspond to the `pde`,
 `clamped_bc`, and `free_bc` objectives.
 
-This problem setting is highly challenging. PINN training landscapes are high-dimensional, computationally expensive, sensitive to parameter perturbations, and often exhibit strong conflicts among physical objectives. A search step that reduces one loss term may have little effect on another, or may even deteriorate it. Therefore, success in EvoPINN requires algorithms that can simultaneously promote convergence and preserve diversity, instead of relying on population spread alone.
+This problem setting is highly challenging. PINN training landscapes are high-dimensional, computationally expensive, sensitive to parameter perturbations, and often exhibit strong conflicts among physical objectives. A search step that reduces one loss term may have little effect on another, or may even deteriorate it. Therefore, success in EvoPINN requires algorithms that can simultaneously promote convergence and preserve diversity, rather than relying solely on population spread.
 
 The aim of this competition is to stimulate the development of new black-box optimization mechanisms for PINN training, especially for large-scale and expensive multiobjective settings. And the final ranking is based on hypervolume (HV).
 
-Twelve EvoPINN benchmark problems are provided on the PlatEMO platform. These problems cover representative PINN tasks with 2 or 3 objectives and up to 45,901 decision variables. Participants are encouraged to develop a robust and general optimizer for the entire benchmark suite, rather than a method specialized for a single problem.
+Twelve EvoPINN benchmark problems are provided on the PlatEMO platform. These problems cover representative PINN tasks with 2 or 3 objectives and up to 45,901 decision variables. Participants are encouraged to develop a robust, general optimizer for the entire benchmark suite, rather than a method specialized to a single problem.
 
 ## Platform & Parameter settings
 
-Participants are encouraged to develop the algorithm to solve these EvoPINN problems, not just a specific one.
-Participants may propose a new optimization algorithm or utilize a hybrid of previously proposed algorithms.
-Notably, it is unrestricted in the field of evolutionary computing.
+Participants are encouraged to develop an algorithm to solve these EvoPINN problems, propose a new optimization algorithm, or use a hybrid of previously proposed algorithms.
+Notably, it is unrestricted in the field of evolutionary computation.
 Participants must submit their source codes, a brief description of the optimization algorithm, a brief code instruction, and the data generated by the platform.
-Organizers will assess the quality of your submitted data in all three problems to guarantee its fairness.
+We'll review the quality of your submitted data for all three problems to ensure fairness.
 With the same computational budget, the best solution for each problem obtained by randomly running your algorithm one time will be compared directly.
 
-The PlatEMO v4.12 will be used as the competition platform for fair comparisons, with population size (N=100), number of independent runs (run=20), and number of results (20). The code of an example is given as
+The PlatEMO v4.12 will be used as the competition platform for fair comparisons, with population size (N=100), number of function evaluations (maxFE=1e7), number of independent runs (run=20), and number of results (20). The code of an example is given as
 
 ```
-platemo('problem',@EvoPINN1,'algorithm',@NSGAII,'N',100,'maxFE',1e5,'save',20)
+platemo('problem',@EvoPINN1,'algorithm',@NSGAII,'N',100,'maxFE',1e7,'save',20)
 ```
 
 Participants should treat the evaluator as a black box.  Analytical gradients, automatic-differentiation gradients, PDE-specific gradients, and modifications to the problem files are not allowed.  Directional or finite-difference information is allowed only if it is estimated through counted objective evaluations.
@@ -57,20 +56,18 @@ Participants should treat the evaluator as a black box.  Analytical gradients, a
 
 Competition dates will be announced by the organizers.
 
-xxxxx
+Deadline: the competition will be closed on July 27, 2026.
+
 
 ## Awards
 
-xxxx
+Certificates from the conference.
 
 ## Competition Organizers:
 
 * ***Cheng He***
   School of Electrical and Electronic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China.
   chenghe_seee@hust.edu.cn
-  * ***Yonglin He***
-  School of Electrical and Electronic Engineering, Huazhong University of Science and Technology, Wuhan 430074, China.
-  heyonglin@hust.edu.cn
 * ***Ye Tian***
   Institutes of Physical Science and Information Technology, Anhui University, Hefei 230601, China
   field910921@gmail.com
