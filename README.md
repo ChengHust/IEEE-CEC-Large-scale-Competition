@@ -2,8 +2,9 @@
 
 **Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for this competition!**
 
-## Overview & Aim:
 <img src="EvoPINN-POSTER.png" />
+
+## Overview & Aim:
 
 Physics-informed neural networks (PINNs) have become a powerful paradigm for solving partial differential equations (PDEs) by embedding physical laws into neural-network training. In a typical PINN, the model is optimized by minimizing several physical loss terms, such as the PDE residual, boundary-condition loss, initial-condition loss, and other constraint-related objectives. Recently, most existing PINN methods are built upon gradient-based optimization. Consequently, all the loss terms are optimized via predefined/adaptive weight aggregations, which may fail to find the optima due to the multiobjective conflicting nature of the PINN training task.
 
