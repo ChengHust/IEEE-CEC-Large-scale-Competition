@@ -22,7 +22,7 @@ This repository collects competition releases organized by Cheng He and collabor
 
 ## Current Competition: EvoPINN
 
-# EvoPINN: Large-scale Multiobjective Optimization for PINN Training
+### EvoPINN: Large-scale Multiobjective Optimization for PINN Training
 
 **Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for this competition!**
 
