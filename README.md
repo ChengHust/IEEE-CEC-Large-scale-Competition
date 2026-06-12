@@ -1,3 +1,27 @@
+# IEEE CEC / DOCS Competition Collection
+
+This repository collects competition releases organized by Cheng He and collaborators for large-scale, super large-scale, and PINN-related multiobjective optimization. The table below provides the same kind of entry point used in the algorithm collection repository: each period is listed with its theme, benchmark suite, platform package, and detailed page.
+
+## Contents
+
+| Period | Competition release | Benchmark suite | Scale and objectives | Platform package | Details |
+| --- | --- | --- | --- | --- | --- |
+| 2024 IEEE CEC | Super Large-scale Multiobjective Optimization for Status Assessment of Measuring Equipment | ETT1-ETT3 | 3 objectives; 1,251,016 to 125,100,016 decision variables | PlatEMO v4.4; see the 2024 page for LFS and Google Drive download notes | [README-2024.md](README-2024.md) |
+| 2025 IEEE CEC | Large-scale Multiobjective Optimization for Status Assessment of Measuring Equipment | SAM1-SAM6 | 2 or 3 objectives; 10,000 to 100,000 decision variables | [PlatEMO(SAM2025).zip](PlatEMO(SAM2025).zip) | [README-2025.md](README-2025.md) |
+| 2026 EvoPINN | Large-scale Multiobjective Optimization for PINN Training | EvoPINN1-EvoPINN12 | 2 or 3 objectives; 901 to 45,901 decision variables | [PlatEMO(EvoPINN).zip](PlatEMO(EvoPINN).zip) | Current README; [DOCS 2026 competition page](https://www.docs2026.com/EvoPINNCompetition.html) |
+
+## Repository Layout
+
+| Path | Role |
+| --- | --- |
+| [README-2024.md](README-2024.md) | Detailed 2024 ETT competition description, settings, dates, awards, and organizers. |
+| [README-2025.md](README-2025.md) | Detailed 2025 SAM competition description, settings, dates, awards, and organizers. |
+| [README.md](README.md) | Overview table plus the current 2026 EvoPINN competition description. |
+| [PlatEMO(SAM2025).zip](PlatEMO(SAM2025).zip) | Platform package for the 2025 SAM competition. |
+| [PlatEMO(EvoPINN).zip](PlatEMO(EvoPINN).zip) | Platform package for the 2026 EvoPINN competition. |
+
+## Current Competition: EvoPINN
+
 # EvoPINN: Large-scale Multiobjective Optimization for PINN Training
 
 **Please download the PlatEMO platform (PlatEMO(EvoPINN).zip) for this competition!**
